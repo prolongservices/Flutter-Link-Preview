@@ -4,7 +4,7 @@ import 'package:http/http.dart';
 class FetchPreview {
   Future fetch(url) async {
     final client = Client();
-    final response = await client.get(url);
+    final response = await client.get(_validateUrl(url));
     final document = parse(response.body);
 
     String description, title, image, appleIcon, favIcon;
@@ -56,5 +56,14 @@ class FetchPreview {
       'appleIcon': appleIcon ?? '',
       'favIcon': favIcon ?? ''
     };
+  }
+
+  _validateUrl(String url) {
+    if (url?.startsWith('http://') == true || url?.startsWith('https://') == true) {
+      return url;
+    }
+    else {
+      return 'http://$url';
+    }
   }
 }
