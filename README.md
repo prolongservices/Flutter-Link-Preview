@@ -1,16 +1,17 @@
-# flutter_link_preview
+# Fetch preview of link in flutter
 
-A flutter project to fetch preview on any link
+Fetch preview of link in flutter, same as whatsapp and other websites/apps fetch preview of link. We will not use any third party app to fetch preview of link. We will parse html content of link and then extract title, description, images etc.
 
-## Getting Started
+To achieve this we will use html and http package from pub.dev and then manually read the html content as string from link and then parse it to html document, then we will get content from our targeted html tags. Such as meta tag, title tag etc. You will learn many things from this video.
 
-This project is a starting point for a Flutter application.
+# Video tutorial for How to Fetch preview of link in flutter
 
-A few resources to get you started if this is your first Flutter project:
+How to Fetch preview of link in flutter
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+[![How to Fetch preview of link in flutter](https://img.youtube.com/vi/sZQ4Ddtz2A4/0.jpg)](https://youtu.be/sZQ4Ddtz2A4)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#flutterTutorial
+#FetchPreviewOfLinkInFlutter
+#flutterUiDesignExamples
+#flutterExamplesApp
+#flutterWidgetsExamples
